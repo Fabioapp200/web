@@ -65,7 +65,6 @@ body{
     position: relative;
     top: 1vw;
     left: 7vw;
-    
 }
 
 .profileNameText{
@@ -82,30 +81,30 @@ body{
 }
 
 .divProfileHeader{
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
 }
 
 a:visited.interessesLink{
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 30px;
-    margin-right: 30px;
+    position: relative;
+    top: 1vw;
 }
 a:link.interessesLink{
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+    position: relative;
+    top: 1vw;
 }
 a:hover.interessesLink{
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 30px;
-    margin-right: 30px;
+    position: relative;
+    top: 1vw;
 }
 
 .divProfileText{
