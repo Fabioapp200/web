@@ -5,9 +5,13 @@
     <!-- #region Page Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- #region bootstrap+jquery -->
     <link rel="stylesheet" type="text/css" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <script type="text/javascript" src="./bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="./bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <!-- #endregion -->
+
     <link rel="stylesheet" type="text/css" href="./css/index_style.css">
     <!-- #endregion -->
     <!-- #region  Fonts Import-->
@@ -22,39 +26,72 @@
 </head>
 
 <body>
+    <!-- #region TopMenu Navbar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark topMenuNav">
+        <a class="navbar-brand" href="#"><img src="./data/imagens/PurpleDotTextoBranco.png" class="topMenuBranding"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarBar">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Hazmat Explorer</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Outros Projetos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">A Empresa</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- #endregion -->
+
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark topMenuNav">
-            <a class="navbar-brand" href="#"><img src="./data/imagens/PurpleDotTextoBranco.png" class="topMenuBranding"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <!--logoIMG-->
         <div class="imgAlign">
             <img src="./data/imagens/Purple Dot Games Logo Branca Fundo Transparente.png" style="width: 200px;">
         </div>
         <!--Hazmat exp-->
         <div>
-            
+
         </div>
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+    <!-- #region Importing jQuery, Popper and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- #endregion -->
 </body>
 
 </html>
