@@ -41,10 +41,37 @@ body{
     min-width: 250px;
     max-width: 350px;
 }
-.gameBannerImage{
-    padding: 2%;
+.hazmatExp{
+    width: 100vw;
+    float: left;
 }
-.txtAlingHazmat{
-    padding: 2%;
+.hazmatExpImage{
+    width: 30%;
+    float: left;
 }
+.txtHazmat{
+    float: left;
+    width: 60%;
+}
+.txtHazmatTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+.txtHazmatBody{
 
+}
+.orgAndLabDiv{
+    clear: both;
+}
+.organizationDiv{
+    float: left;
+    background-color: greenyellow;
+    height: 100vw;
+    width: 50%;
+}
+.labyrinthDiv{
+    float: left;
+    background-color: blue;
+    height: 100vw;
+    width: 50%;
+}
