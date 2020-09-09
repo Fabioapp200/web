@@ -30,10 +30,15 @@ body{
     font-size: 1.2em;
 }
 
-.navBarItem{
-    right: 100px;
+.logoBanner{
+    background-color: #8c29992a;
+    max-height: 800px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
-.imgAlign{
-    padding: 2%;
+.logoBannerImage{
+    width: 50%;
+    min-width: 250px;
+    max-width: 350px;
 }
 
