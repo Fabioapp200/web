@@ -20,15 +20,17 @@ body{
 .topMenuBranding{
     width: 5vw;
     min-width: 75px;
+    loading:"lazy";
 }
 
-.topMenuContainer{
+.topMenuNav{
     width: 100vw;
     background-color: #8C2999;
     color: #FDF9FF;
     font-family: 'Kufam', cursive;
     font-size: em;
     min-height: 50px;
+    max-height: 100px;
     padding: 2%;
 }
 .imgAlign{
