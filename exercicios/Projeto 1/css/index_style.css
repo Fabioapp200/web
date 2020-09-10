@@ -44,6 +44,7 @@ body{
 .hazmatExp{
     width: 100vw;
     float: left;
+    padding: 2%;
 }
 .hazmatExpImage{
     width: 30%;
