@@ -24,7 +24,7 @@ body{
 }
 
 .topMenuNav{
-    background-color: #8C2999;
+    background-color: #8c2999e8;
     color: #FDF9FF;
     font-family: 'Kufam', cursive;
     font-size: 1.2em;
@@ -65,14 +65,54 @@ body{
     clear: both;
 }
 .organizationDiv{
-    float: left;
-    background-color: greenyellow;
-    height: 100vw;
-    width: 50%;
+    background-color: #0095af;
 }
-.labyrinthDiv{
-    float: left;
-    background-color: blue;
-    height: 100vw;
-    width: 50%;
+.organizationLogo{
+    padding-top: 5vw;
+}
+.organizationLogoImage{
+    width: 35%;
+    min-width: 80px;
+    max-width: 200px;
+    margin: 1vw;
+}
+.organizationTxtTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+.organizationTxtBody{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+.amazonDownload{
+    width: 40%;
+    min-width: 150px;
+    max-width: 200px;
+}
+.labyrinthBackground{
+    background-color: #462110;
+}
+.labyrinthBanner{
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+.labyrinthTxtTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+.labyrinthTxtBody{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+    padding-right: 2vw;
+    padding-left: 2vw;    
+}
+.labyrinthPlayItNow{
+    width: 40%;
+    min-width: 150px;
+    max-width: 350px;    
 }
