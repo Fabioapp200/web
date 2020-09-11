@@ -114,6 +114,22 @@ body{
     min-width: 150px;
     max-width: 250px;    
 }
+.companyBackground{
+    background-color: #8C2999;
+}
 .companyLogo{
-    width: 10%;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+    margin: 2vw;
+}
+.purpleDotGamesHead{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    margin: 2vw;
+}
+.purpleDotTxtBody{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+    margin: 2vw;
 }
