@@ -61,11 +61,11 @@ body{
     margin: 2vw;
 }
 .txtGameAvailable{
-    clear: both;
-    float: right;
+
 }
 .txtMesage{
     font-size: 1.5em;
+    clear: both;
     text-align: end;
 }
 .orgAndLabDiv{
