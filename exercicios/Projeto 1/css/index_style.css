@@ -40,33 +40,33 @@ body{
 }
 .hazmatExp{
     width: 100%;
-    float: left;
-    padding: 2%;
     background-color: #FFBA00;
 }
 .hazmatExpImage{
-    width: 30%;
-    float: left;
+    width: 60%;
+    min-width: 150px;
+    max-width: 200px;
 }
 .txtHazmat{
-    float: left;
-    width: 60%;
+
 }
 .txtHazmatTitle{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
+    font-size: 4em;
 }
 .txtHazmatBody{
     font-family: 'Roboto', sans-serif;
-    margin: 2vw;
-}
-.txtGameAvailable{
+    font-size: 1.3em;
+    font-weight: bold;
 
 }
-.txtMesage{
+.txtGameAvailable{
+    text-align: right;
+}
+.txtMessage{
     font-size: 1.5em;
-    clear: both;
-    text-align: end;
+    font-family: 'Bebas Neue', cursive;
+    
 }
 .orgAndLabDiv{
     clear: both;
