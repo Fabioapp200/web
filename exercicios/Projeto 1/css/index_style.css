@@ -57,7 +57,15 @@ body{
     font-size: 2em;
 }
 .txtHazmatBody{
-
+    font-family: 'Roboto', sans-serif;
+    margin: 2vw;
+}
+.txtGameAvailable{
+    float: left;
+}
+.txtMesage{
+    font-size: 1.5em;
+    text-align: right;
 }
 .orgAndLabDiv{
     clear: both;
