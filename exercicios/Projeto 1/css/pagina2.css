@@ -16,3 +16,27 @@ body{
     font-size: 1em;
     text-align: center;
 }
+.topMenuBranding{
+    width: 5vw;
+    min-width: 75px;
+    margin: 10px;
+}
+.topMenuNav{
+    background-color: #8c2999e8;
+    color: #FDF9FF;
+    font-family: 'Kufam', cursive;
+    font-size: 1.2em;
+}
+.hazmat{
+    width: 100%;
+    background-color:  #FFBA00;
+}
+.hazmatExpImg{
+    width: 70%;
+    min-width: 350px;
+    max-width: 300px;
+}
+.hazmatTXT{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6em;
+}
