@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*  
+    font reference
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kufam', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    background-color: #282828;
+    color: #FDF9FF;
+    font-family: 'Roboto', cursive, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
