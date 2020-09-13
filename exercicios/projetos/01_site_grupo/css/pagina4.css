@@ -27,3 +27,33 @@ body{
     font-family: 'Kufam', cursive;
     font-size: 1.2em;
 }
+.purpleDotGamesHead{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+.purpleDotGamesLogo{
+    min-width: 100px;
+    max-width: 350px;
+}
+.entreEmContato{
+    background-color:#1D0028;
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
+}
+a:any-link.entreEmContatoLink{
+    font-family: 'Bebas Neue', cursive;
+    color: #FDF9FF;
+    font-size: 2em;
+    text-decoration: none;
+}
+a:any-link.campanhaIndie{
+    font-family: 'Bebas Neue', cursive;
+    color: #282828;
+    font-size: 2em;
+    text-decoration: none;
+}
+.campanhaIndieHead{
+    font-family: 'Bebas Neue', cursive;
+    color: #FDF9FF;
+    font-size: 2em;
+}
