@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*  
+    font reference
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kufam', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    background-color: #282828;
+    color: #FDF9FF;
+    font-family: 'Roboto', cursive, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+.topMenuBranding{
+    width: 5vw;
+    min-width: 75px;
+    margin: 10px;
+}
+.topMenuNav{
+    background-color: #8c2999e8;
+    color: #FDF9FF;
+    font-family: 'Kufam', cursive;
+    font-size: 1.2em;
+}

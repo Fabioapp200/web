@@ -41,7 +41,6 @@ body{
 .hazmatExp{
     width: 100%;
     background-color: #FFBA00;
-
 }
 .hazmatExpImage{
     width: 100%;
@@ -53,12 +52,13 @@ body{
     font-size: 4em;
     line-height: 1em;
     padding-top: 3%;
+    color: #282828;
 }
 .txtHazmatBody{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     font-weight: bold;
-
+    color: #282828;
 }
 .availableSoonButton{
     width: 30%;
