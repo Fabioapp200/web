@@ -40,3 +40,12 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 6em;
 }
+.hazmapBackGround{
+    width: 100%;
+    background-color:  #6B0080;
+}
+.HazmatInfo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+
