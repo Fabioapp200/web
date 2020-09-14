@@ -22,7 +22,7 @@ body{
     margin: 10px;
 }
 .topMenuNav{
-    background-color: #8c2999e8;
+    background-color: #6B0080;
     color: #FDF9FF;
     font-family: 'Kufam', cursive;
     font-size: 1.2em;
@@ -57,3 +57,69 @@ a:any-link.campanhaIndie{
     color: #FDF9FF;
     font-size: 2em;
 }
+.fundadoresTarja{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: #FDF9FF;
+    background-color:#1D0028;
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
+}
+.fundadoresFotos{
+    width: 100%;
+    max-width: 300px;
+    border-color: #FDF9FF;
+    border-style: solid;
+    border-width: 0.5rem;
+}
+/* #region  Social Menu */
+
+.social-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 40px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+/* #endregion */
