@@ -56,3 +56,11 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
 }
+.hazmatImgCarousel{
+    width: 100%;
+    min-width: 950px;
+    max-width: 900px;
+}
+.carouselBackGround{
+    background-color:  #6B0080;
+}
