@@ -39,6 +39,7 @@ body{
 .hazmatTXT{
     font-family: 'Bebas Neue', cursive;
     font-size: 6em;
+    line-height: 1em;
 }
 .hazmapBackGround{
     width: 100%;
