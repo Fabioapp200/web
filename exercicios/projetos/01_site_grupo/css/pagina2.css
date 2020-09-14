@@ -41,19 +41,16 @@ body{
     font-size: 6em;
     line-height: 1em;
 }
-.hazmapBackGround{
+.hazmatBackGround{
     width: 100%;
     background-color:  #6B0080;
 }
+.carouselBorder{
+    border-style: solid;
+    border-color: #282828;
+    border-width: 10px;
+}
 .HazmatInfo{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
-}
-.HazmatInfo1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
-}
-.HazmatInfo2{
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
 }
