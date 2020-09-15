@@ -33,23 +33,58 @@ body{
 }
 .organizationExpImg{
     width: 40%;
-    min-width: 350px;
-    max-width: 300px;
+    min-width: 250px;
+    max-width: 450px;
+}
+.organizationCarousel{
+    width: 100%;
+    min-width: 250px;
+    max-width: 200px;
 }
 .organizationTXT{
     font-family: 'Bebas Neue', cursive;
     font-size: 5em;
 }
-.hazmatImgCarousel{
-    width: 100%;
-    min-width: 250px;
-    max-width: 200px;
-}
 .organizationBackGround{
     width: 100%;
     background-color:  #6B0080;
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
 }
 .organizationInfo{
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
+}
+.theLabyrinth{
+    width: 100%;
+    background-color:    #462110;
+}
+.theLabyrinthExpImg{
+    width: 40%;
+    min-width: 250px;
+    max-width: 400px;
+}
+.theLabyrinthCarousel{
+    width: 100%;
+    min-width: 450px;
+    max-width: 600px;
+}
+.theLabyrinthBackGround{
+    width: 100%;
+    background-color:  #6B0080;
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
+}
+.theLabyrinthInfo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+.theLabyrinthBorder{
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
+}
+.entreEmContato{
+    background-color:#1D0028;
+    border-style: solid none solid none;
+    border-color: #FDF9FF;
 }
