@@ -49,6 +49,8 @@ body{
     border-style: solid;
     border-color: #282828;
     border-width: 10px;
+    width: 100%;
+    max-width: 640px;
 }
 .HazmatInfo{
     font-family: 'Bebas Neue', cursive;
@@ -62,4 +64,17 @@ body{
 }
 .carouselBackGround{
     background-color:  #6B0080;
+}
+.inspiracoesHead{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    line-height: 1em;
+}
+.inspiracoesImagens1{
+    min-width: 200px;
+    max-width: 650px;
+}
+.inspiracoesImagens2{
+    min-width: 290px;
+    max-width: 650px;
 }
