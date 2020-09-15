@@ -29,10 +29,27 @@ body{
 }
 .organization{
     width: 100%;
-    background-color:  #0095af;
+    background-color:   #0095af;
 }
-.organizationImg{
+.organizationExpImg{
+    width: 40%;
+    min-width: 350px;
+    max-width: 300px;
+}
+.organizationTXT{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+}
+.hazmatImgCarousel{
     width: 100%;
-    min-width: 150px;
-    max-width: 350px;
+    min-width: 250px;
+    max-width: 200px;
+}
+.organizationBackGround{
+    width: 100%;
+    background-color:  #6B0080;
+}
+.organizationInfo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
 }
