@@ -52,7 +52,8 @@ body{
 }
 .HazmatInfo{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
+    text-decoration: underline;
 }
 .hazmatImgCarousel{
     width: 100%;
