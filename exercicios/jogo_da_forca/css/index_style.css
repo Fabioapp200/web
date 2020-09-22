@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(46, 175, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-group{
+    width: 50%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.btn-group button{
+    background-color: rgb(22, 57, 255);
+    color: white;   
+    width: 50px;
+    height: 50px;
+    
+}
