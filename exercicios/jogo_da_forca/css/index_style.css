@@ -9,17 +9,52 @@ body{
     background-color: rgb(46, 175, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.sortearButton{
+    background-color: #2f4eff;
+    color: white;   
+    font-weight: bolder;
+    font-size: 1.15em;
+    border: 1px #282828 solid;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 3px 0px;
+}
+.sortearButton:hover{
+    background-color: #4f69ff;
+    color: white;   
+    font-weight: bolder;
+    font-size: 1.15em;
+    border: 1px #282828 solid;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 3px 0px;
+}
 .btn-group{
-    width: 50%;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.13);
+    display: block;
+    padding: 1% 0%;
+    margin-top: 3%;
 }
 .btn-group button{
-    background-color: rgb(22, 57, 255);
+    background-color: #2f4eff;
     color: white;   
-    width: 50px;
-    height: 50px;
+    font-weight: bolder;
+    font-size: 1.15em;
+    border: 1px #282828 solid;
+    width: 75px;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin: 3px 0px;
     
+}
+.btn-group :hover{
+    background-color: #4f69ff;
+    color: white;   
+    font-weight: bolder;
+    font-size: 1.15em;
+    border: 1px #d0d1ff solid;
+    width: 75px;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin: 3px 0px;
 }
