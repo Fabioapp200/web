@@ -21,16 +21,16 @@ function sortearPalavra() {
         "coelho",
         "ornitorrinco"];
 
-    var dicas = ["fruta",
-        "animal grande",
-        "marca de carro",
-        "acessório para celular",
-        "periférico de computador",
-        "esporte",
-        "profissão",
-        "tipo de competição",
-        "animal pequeno",
-        "animal aquático"]
+    var dicas = ["Fruta",
+        "Animal grande",
+        "Marca de carro",
+        "Acessório para celular",
+        "Periférico de computador",
+        "Esporte",
+        "Profissão",
+        "Tipo de competição",
+        "Animal pequeno",
+        "Animal aquático"]
 
 
     var sorteio = Math.floor(Math.random() * palavras.length);
@@ -43,13 +43,14 @@ function sortearPalavra() {
 
     document.getElementById("palavraSorteadaText").innerText = "";
 
+    document.getElementById("botaoDica").innerText = "Dica";
+
     palavraDisplay = palavraAtual;
 
     for (i = 0; i < palavraAtual.length; i++) {
         document.getElementById("palavraSorteadaText").innerText = document.getElementById("palavraSorteadaText").innerText + "_";
         palavraDisplay = palavraDisplay.replace(palavraDisplay[i], "_")
     }
-    console.log(palavraAtual);
 
     document.getElementById("botaoSorteio").disabled = true;
     /* #endregion */
@@ -83,7 +84,6 @@ function tentarLetra(letra) {
             }
             if (!palavraAtual.includes(letra)) {
                 contagemDeErros++;
-                console.log(contagemDeErros);
                 switch (contagemDeErros) {
                     case 0:
                         document.getElementById("imagemDaForca").src = "./data/images/Forca-0.png";
@@ -113,17 +113,14 @@ function tentarLetra(letra) {
         }
     }
     else {
-        document.getElementById("palavraSorteadaText").innerText = "Você deve sortear uma palavra antes de começar a jogar"
+        document.getElementById("palavraSorteadaText").innerText = "Você deve sortear uma palavra antes de começar a jogar";
     }
 }
 function mostrarDica() {
-    var mostandoDica = 0;
-    if (!mostandoDica) {
+    if(palavraFoiSorteada){
         document.getElementById("botaoDica").innerText = dicaAtual;
-        mostandoDica = 1;
     }
-    if (mostandoDica){
-        document.getElementById("botaoDica").innerText = "Dica";
-        mostandoDica = 0;
+    else{
+        document.getElementById("botaoDica").innerText = "Dica ^^^^";
     }
 }
