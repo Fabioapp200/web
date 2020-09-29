@@ -37,7 +37,6 @@ function sortearPalavra() {
 
     palavraAtual = palavras[sorteio];
     dicaAtual = dicas[sorteio];
-    console.log("batata");
     palavraFoiSorteada = 1;
     contagemDeErros = 0;
     document.getElementById("imagemDaForca").src = "./data/images/Forca-0.png";
@@ -119,12 +118,9 @@ function tentarLetra(letra) {
 }
 function mostrarDica() {
     var mostandoDica = 0;
-    
-    console.log(dicaAtual);
     if (!mostandoDica) {
         document.getElementById("botaoDica").innerText = dicaAtual;
         mostandoDica = 1;
-        console.log(dicaAtual);
     }
     if (mostandoDica){
         document.getElementById("botaoDica").innerText = "Dica";

@@ -28,6 +28,7 @@ body{
     letter-spacing: 4px;
 }
 .botaoSorteioDiv{
+    clear: both;
     align-items: center;
     padding: 2% 0%;
 }
