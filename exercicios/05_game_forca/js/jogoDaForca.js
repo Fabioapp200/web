@@ -1,3 +1,4 @@
+//Jogo da forca por Fábio Pinto e André Dessunte
 var palavraAtual;
 var dicaAtual;
 var letra;
