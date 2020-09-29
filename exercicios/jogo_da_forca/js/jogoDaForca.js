@@ -3,6 +3,7 @@ var dicaAtual;
 var letra;
 var palavraFoiSorteada;
 var palavraDisplay;
+var contagemDeErros = 0;
 
 
 function sortearPalavra() {
@@ -44,10 +45,7 @@ function sortearPalavra() {
         document.getElementById("palavraSorteadaText").innerText = document.getElementById("palavraSorteadaText").innerText + "_";
         palavraDisplay = palavraDisplay.replace(palavraDisplay[i],"_")
     }
-
     console.log(palavraAtual);
-    console.log(palavraDisplay);
-
 
 }
 
@@ -61,9 +59,7 @@ function sortearPalavra() {
             letra = letra.toLowerCase();
             
             if (letraAtual == letra)
-            {
-                console.log(i);
-                
+            {                
                 palavraDisplay = palavraDisplay.split("");
                 
                 palavraDisplay[i] = letra;
@@ -71,6 +67,16 @@ function sortearPalavra() {
                 palavraDisplay = palavraDisplay.join("");
 
                 document.getElementById("palavraSorteadaText").innerText = palavraDisplay;
+            }
+            if (!palavraAtual.includes(letra))
+            {
+                contagemDeErros++;
+                console.log(contagemDeErros);
+                if (contagemDeErros == 5)
+                {
+                    document.getElementById("palavraSorteadaText").innerText = "Você perdeu";
+                }
+                break
             }
             
         } 
