@@ -12,29 +12,36 @@
 </head>
 
 <body>
-    <br>
-    <h1>Jogo da Forca</h1>
-    <br>
+    <div class="header">
+        Jogo da Forca
+    </div>
+    
+    
 
+    <div class="forcaImagemDiv">
+        <img id="imagemDaForca" class="forcaImagem" src="./data/images/Forca-0.png" >
+    
+        <p id="palavraSorteadaText" class="palavraSorteadaTextStyle">
+            Clique para sortear sua palavra!
+        </p>
+    </div>
 
-    <p id="palavraSorteadaText" class="palavraSorteadaTextStyle">
-        Clique para sortear sua palavra!
-    </p>
-
-
-    <button class="sortearButton" onclick="sortearPalavra()">
-        Sortear Palavra
-    </button>
+    <div class="botaoSorteioDiv">
+        <button id="botaoSorteio" class="sortearButton" onclick="sortearPalavra()" >
+            Sortear Palavra
+        </button>
+    </div>
+    
 
     <script src="./js/jogoDaForca.js"></script>
-    <div style="margin: auto;">
+    <div style="margin: auto; clear: both;">
         <!-- #region Botoes de letras -->
         <div class="btn-group">
             <button id="A" onclick="tentarLetra('A')">A</button>
             <button id="B" onclick="tentarLetra('B')">B</button>
             <button id="C" onclick="tentarLetra('C')">C</button>
             <button id="D" onclick="tentarLetra('D')">D</button>
-            <button id="E" onclick="tentarLetra('E')">E</button> <br>
+            <button id="E" onclick="tentarLetra('E')">E</button> 
             <button id="F" onclick="tentarLetra('F')">F</button>
             <button id="G" onclick="tentarLetra('G')">G</button>
             <button id="H" onclick="tentarLetra('H')">H</button>
@@ -44,7 +51,7 @@
             <button id="L" onclick="tentarLetra('L')">L</button>
             <button id="M" onclick="tentarLetra('M')">M</button>
             <button id="N" onclick="tentarLetra('N')">N</button>
-            <button id="O" onclick="tentarLetra('O')">O</button> <br>
+            <button id="O" onclick="tentarLetra('O')">O</button> 
             <button id="P" onclick="tentarLetra('P')">P</button>
             <button id="Q" onclick="tentarLetra('Q')">Q</button>
             <button id="R" onclick="tentarLetra('R')">R</button>
@@ -54,10 +61,14 @@
             <button id="V" onclick="tentarLetra('V')">V</button>
             <button id="W" onclick="tentarLetra('W')">W</button>
             <button id="X" onclick="tentarLetra('X')">X</button>
-            <button id="Y" onclick="tentarLetra('Y')">Y</button> <br>
+            <button id="Y" onclick="tentarLetra('Y')">Y</button> 
             <button id="Z" onclick="tentarLetra('Z')">Z</button>
         </div>
         <!-- #endregion -->
+    </div>
+
+    <div class="footer">
+        Desenvolvido por Fábio Pinto e André Dessunte
     </div>
 
 

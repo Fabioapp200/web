@@ -9,13 +9,35 @@ body{
     background-color: rgb(46, 175, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.sortearButton{
+.header{
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 2% 0%;
+}
+.forcaImagemDiv{
+    padding: 3% 0px;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+.forcaImagem{
+    width: 40%;
+    max-width: 200px;
+}
+.palavraSorteadaTextStyle{
+    font-weight: bold;
+    padding: 3% 0% 0% 0%;
+    letter-spacing: 4px;
+}
+.botaoSorteioDiv{
+    align-items: center;
+    padding: 2% 0%;
+}
+.sortearButton:enabled{
     background-color: #2f4eff;
     color: white;   
     font-weight: bolder;
     font-size: 1.15em;
     border: 1px #282828 solid;
-    padding: 10px 10px;
+    padding: 1%;
     cursor: pointer;
     margin: 3px 0px;
 }
@@ -25,20 +47,26 @@ body{
     font-weight: bolder;
     font-size: 1.15em;
     border: 1px #282828 solid;
-    padding: 10px 10px;
+    padding: 1%;
     cursor: pointer;
     margin: 3px 0px;
 }
-.palavraSorteadaTextStyle{
-    font-weight: bold;
-    margin: 50px;
-    letter-spacing: 4px;
+.sortearButton:disabled{
+    background-color: #93a3ff;
+    color: white;   
+    font-weight: bolder;
+    font-size: 1.15em;
+    border: 1px #282828 solid;
+    padding: 1%;
+    cursor: pointer;
+    margin: 3px 0px;
+    pointer-events: none;
+    cursor: default;    
 }
 .btn-group{
     background-color: rgba(255, 255, 255, 0.13);
     display: block;
     padding: 1% 0%;
-    margin-top: 3%;
 }
 .btn-group button{
     background-color: #2f4eff;
@@ -62,4 +90,10 @@ body{
     padding: 10px 0px;
     cursor: pointer;
     margin: 3px 0px;
+}
+.footer{
+    position: sticky;
+    font-size: 0.8em;
+    margin-top: 4%;
+    padding: 2% 0px;
 }
