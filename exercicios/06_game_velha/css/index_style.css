@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/* CSS HEX 
+--red-salsa: #fb3640ff;
+--davys-grey: #605f5eff;
+--space-cadet: #1d3461ff;
+--yale-blue: #1f487eff;
+--celadon-blue: #247ba0ff;
+*/
+body{
+    background-color: #247BA0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+.header{
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 2% 0px;
+    background-color: #1D3461;
+}
+.casasGrid{
+    margin: auto;
+    padding: 2% 0px;
+}
+.casasGrid button{
+    border: 5px solid  #FB3640;
+    background-color: white;
+    font-size: 3em;
+    width: 150px;
+    height: 150px;
+    margin: 0px -3px;
+    outline: none;
+    cursor: pointer;
+}
+.casasGrid button:hover{
+    background-color:  rgb(219, 219, 219);
+}
+
+.jogarNovamente{
+    border: 3px solid white;
+    color: white;
+    font-size: 1.8em;
+    background-color: #1f487eff;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    padding: 1% 0px;
+}
+.jogarNovamente:hover{
+    border: 3px solid white;
+    background-color: rgb(41, 86, 145);
+}
