@@ -21,36 +21,15 @@ function jogar(numeroDaCasa) {
         console.log("vitoria");
     }
 }
-
 function inicioJogadorAleatorio() {
     var jogadorSorteado = Math.floor(Math.random() * 2);
 
 }
 function jogarNovamente() {
-    
-    
     for (i = 0; i < 9; i++) {
         numeroDaCasa = i;
         document.getElementById(numeroDaCasa + 1).innerHTML = "&nbsp";
         document.getElementById(numeroDaCasa + 1).disabled = false;
         document.getElementById(2).disabled = false;
     }
-}
-
-
-function trocarTxt() {
-    /*  switch ()
-     {
-         
-         case 0:
-             document.getElementById("").innerText = "x";
-                 break;
-         case 1:
-             document.getElementById("").innerText = "O";
-                 break;
-         case 2:
-             document.getElementById("").innerText = "";
-                 break;
- 
-     } */
 }
