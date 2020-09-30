@@ -30,14 +30,25 @@ body{
     border: 5px solid  #FB3640;
     background-color: white;
     font-size: 3em;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0px -3px;
     outline: none;
     cursor: pointer;
 }
 .casasGrid button:hover{
     background-color:  rgb(219, 219, 219);
+}
+.casasGrid button:disabled{
+    border: 5px solid  #FB3640;
+    background-color: white;
+    color: black;
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    margin: 0px -3px;
+    outline: none;
+    cursor: pointer;
 }
 
 .jogarNovamente{
