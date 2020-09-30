@@ -13,12 +13,15 @@
     <title>Jogo da Velha</title>
 </head>
 
-<body>
-
+<body onload="carregamentoInicial()">
     <div class="header">Jogo da Velha</div>
     <script src="./js/jogoDaVelha.js"></script>
-    <div>
-        <div class="casasGrid">
+    <div class="tarjaJogadores" id="display">
+        CLIQUE EM INICIAR
+    </div>
+
+    <div class="jogo">
+        <div class="casasGrid" style="margin: auto;">
             <button onclick="jogar(1)" id="1">&nbsp;</button>
             <button onclick="jogar(2)" id="2">&nbsp;</button>
             <button onclick="jogar(3)" id="3">&nbsp;</button>
@@ -33,15 +36,11 @@
             <br>
         </div>
     </div>
-
-    <div>
-        <button onclick="jogarNovamente()" id="jogarDnv"class="jogarNovamente">
-            Jogar novamente
+    <div class="jogarNovamenteDiv" style="clear: both; margin: 1% auto;">
+        <button onclick="iniciarJogo()" id="jogarDnv" class="jogarNovamente">
+            Iniciar o Jogo
         </button>
     </div>
-
-
-
 </body>
 
 </html>

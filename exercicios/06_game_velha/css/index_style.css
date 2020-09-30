@@ -22,9 +22,19 @@ body{
     padding: 2% 0px;
     background-color: #1D3461;
 }
-.casasGrid{
+.tarjaJogadores{
+    background-color: #FB3640;   
+    width: 300px;
     margin: auto;
-    padding: 2% 0px;
+    padding: 1% 0%;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+
+.jogo{
+    clear: both;
 }
 .casasGrid button{
     border: 5px solid  #FB3640;
@@ -43,22 +53,15 @@ body{
     border: 5px solid  #FB3640;
     background-color: white;
     color: black;
-    font-size: 3em;
-    width: 100px;
-    height: 100px;
-    margin: 0px -3px;
-    outline: none;
-    cursor: pointer;
 }
-
 .jogarNovamente{
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0);
     color: white;
     font-size: 1.8em;
     background-color: #1f487eff;
     outline: none;
     cursor: pointer;
-    width: 20%;
+    width: 300px;
     padding: 1% 0px;
 }
 .jogarNovamente:hover{
