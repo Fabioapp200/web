@@ -14,27 +14,28 @@
 </head>
 
 <body>
-    <div class="header">Jogo da Velha</div>
 
+    <div class="header">Jogo da Velha</div>
+    <script src="./js/jogoDaVelha.js"></script>
     <div>
         <div class="casasGrid">
-            <button id="1">X</button>
-            <button id="2">X</button>
-            <button id="3">X</button>
+            <button onclick="jogar(1)" id="1">&nbsp;</button>
+            <button onclick="jogar(2)" id="2">&nbsp;</button>
+            <button onclick="jogar(3)" id="3">&nbsp;</button>
             <br>
-            <button id="4">&nbsp;</button>
-            <button id="5">X</button>
-            <button id="6">&nbsp;</button>
+            <button onclick="jogar(4)" id="4">&nbsp;</button>
+            <button onclick="jogar(5)" id="5">&nbsp;</button>
+            <button onclick="jogar(6)" id="6">&nbsp;</button>
             <br>
-            <button id="7">X</button>
-            <button id="8">O</button>
-            <button id="9">X</button>
+            <button onclick="jogar(7)" id="7">&nbsp;</button>
+            <button onclick="jogar(8)" id="8">&nbsp;</button>
+            <button onclick="jogar(9)" id="9">&nbsp;</button>
             <br>
         </div>
     </div>
 
     <div>
-        <button id="jogarNovamente"class="jogarNovamente">
+        <button onclick="jogarNovamente()" id="jogarDnv"class="jogarNovamente">
             Jogar novamente
         </button>
     </div>
