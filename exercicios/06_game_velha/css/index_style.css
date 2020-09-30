@@ -54,6 +54,7 @@ body{
     border: 5px solid  #FB3640;
     background-color: white;
     color: black;
+    cursor: default;
 }
 .jogarNovamente{
     border: 3px solid rgba(255, 255, 255, 0);
