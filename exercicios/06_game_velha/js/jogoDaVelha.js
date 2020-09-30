@@ -83,6 +83,7 @@ function jogarNovamente() {
         console.clear();
         numeroDaCasa = i;
         casa = ["", "", "", "", "", "", "", "", ""];
+        document.getElementById("display").innerHTML = "Vez do " + jogadorInicial; 
         document.getElementById(numeroDaCasa + 1).innerHTML = "&nbsp";
         document.getElementById(numeroDaCasa + 1).disabled = false;
         document.getElementById(2).disabled = false;
