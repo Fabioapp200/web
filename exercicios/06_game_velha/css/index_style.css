@@ -70,3 +70,10 @@ body{
     border: 3px solid white;
     background-color: rgb(41, 86, 145);
 }
+.footer{
+    background-color: #1f487eff;;
+    position: sticky;
+    font-size: 0.8em;
+    margin-top: 4%;
+    padding: 2% 0px;
+}
