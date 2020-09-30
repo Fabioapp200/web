@@ -17,8 +17,10 @@ function jogar(numeroDaCasa) {
         console.log(casa);
         vezP1 = 1;
     }
-    if((casa[0] && casa[1] && casa[2]) == "X"){
-        console.log("vitoria");
+    if((casa[0] && casa[1] && casa[2]) || (casa[3] && casa[4] && casa[5]) || (casa[6] && casa[7] && casa[8]) || 
+      (casa[0] && casa[3] && casa[6]) || (casa[1] && casa[4] && casa[7]) || (casa[2] && casa[5] && casa[8]) ||
+      (casa[0] && casa[4] && casa[8]) || (casa[6] && casa[4] && casa[2]) == "X"){
+        console.log("vitoria");   
     }
 }
 function inicioJogadorAleatorio() {
