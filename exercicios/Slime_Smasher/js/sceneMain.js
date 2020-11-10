@@ -8,7 +8,7 @@ class SceneMain extends Phaser.Scene {
         // ex: imagens, sons
     }
     create() {
-        // usada para criar objetos
+        this.label = this.add.text(game.config.width * 0.1, game.config.height * 0.1, 'Testo Teste');
         console.log("Ready!");
     }
     update() {
