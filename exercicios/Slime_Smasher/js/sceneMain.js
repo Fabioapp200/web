@@ -4,11 +4,14 @@ class SceneMain extends Phaser.Scene {
     }
     preload()
     {
-        // permite carregar os recursos antes de usá-los
-        // ex: imagens, sons
+        // carregando assets
+        this.load.image('slime', 'images/slime.png');
     }
     create() {
-        this.label = this.add.text(game.config.width * 0.1, game.config.height * 0.1, 'Testo Teste');
+        // adicionando assets na cena
+        this.slime = this.add.sprite(game.config.width * 0.5, game.config.height * 0.5, 'slime');
+       // this.slime = this.add.sprite(100, 100, 'slime');
+        
         console.log("Ready!");
     }
     update() {

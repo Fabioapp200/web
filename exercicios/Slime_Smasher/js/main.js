@@ -2,7 +2,7 @@ var game;
 window.onload = function () {
     var config = {
         type: Phaser.AUTO,
-        width: 400,
+        width: 500,
         height: 500,
         parent: 'phaser-game',
         scene: [SceneMain]
