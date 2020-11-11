@@ -6,15 +6,32 @@ class SceneMain extends Phaser.Scene {
     {
         // carregando assets
         this.load.image('slime', 'images/slime.png');
+        this.load.image('Pedestal', 'images/Pedestal.png');
+        this.load.image('Medalhao', 'images/Medalhao.png');
     }
     create() {
         // adicionando assets na cena
-        this.slime = this.add.sprite(game.config.width * 0.5, game.config.height * 0.5, 'slime');
-       // this.slime = this.add.sprite(100, 100, 'slime');
-        
-        console.log("Ready!");
+        this.Pedestal = this.add.sprite(game.config.width * 0.5, game.config.height * 0.2, 'Pedestal');
+        this.Medalhao = this.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'Medalhao');
+    }
+
+    hit() {
+        // define posição da moeda randomicamente
+        this.slime.x = Phaser.Math.Between(100, 600);
+        this.slime.y = Phaser.Math.Between(100, 300);
+
+        // incrementa o score
+        this.score += 10;
+        this.scoreText.setText('score: ' + this.score);
+    }
+
+    spawnSlime()
+    {
+        //this.slime.x = Phaser.Math.Between(100, 600);
+        this.slime = this.physics.add.sprite( Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime');
     }
     update() {
+        this.spawnSlime();
         // loop infinito com o jogo
     }
 }

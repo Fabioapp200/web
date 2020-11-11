@@ -5,6 +5,15 @@ window.onload = function () {
         width: 500,
         height: 500,
         parent: 'phaser-game',
+        physics: {
+            default: 'arcade',
+            arcade:{
+                gravity: {
+                    y:-50
+                },
+                debug: false
+            }
+        },
         scene: [SceneMain]
     };
     game = new Phaser.Game(config);
