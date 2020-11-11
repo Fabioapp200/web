@@ -14,6 +14,7 @@ class SceneMain extends Phaser.Scene {
         // adicionando assets na cena
         this.Pedestal = this.add.sprite(game.config.width * 0.5, game.config.height * 0.2, 'Pedestal');
         this.Medalhao = this.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'Medalhao');
+        this.tempo=0;
         
     }
 
@@ -34,12 +35,12 @@ class SceneMain extends Phaser.Scene {
     }
     
     update() {
-        var tempo=0;
-        tempo = tempo +1;
+        
+        this.tempo ++;
         //console.log(tempo);
-        if(tempo >10)
+        if(this.tempo >100)
         {
-            tempo=0;
+            this.tempo=0;
             this.spawnSlime();
         }
     }

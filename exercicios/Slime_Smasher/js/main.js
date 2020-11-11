@@ -9,7 +9,7 @@ window.onload = function () {
             default: 'arcade',
             arcade:{
                 gravity: {
-                    y:-50
+                    y:-7
                 },
                 debug: false
             }
