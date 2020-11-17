@@ -1,10 +1,9 @@
-class SceneMain extends Phaser.Scene { 
+class SceneMain extends Phaser.Scene {
     constructor() {
         super('SceneMain');
     }
-    
-    preload()
-    {
+
+    preload() {
         // carregando assets
         this.load.image('slime', 'images/slime.png');
         this.load.image('Pedestal', 'images/Pedestal.png');
@@ -14,8 +13,9 @@ class SceneMain extends Phaser.Scene {
         // adicionando assets na cena
         this.Pedestal = this.add.sprite(game.config.width * 0.5, game.config.height * 0.2, 'Pedestal');
         this.Medalhao = this.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'Medalhao');
-        this.tempo=0;
-        
+        // this.slime = this.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'slime');
+        this.tempo = 0;
+
     }
 
     hit() {
@@ -28,19 +28,24 @@ class SceneMain extends Phaser.Scene {
         this.scoreText.setText('score: ' + this.score);
     }
 
-    spawnSlime()
-    {
+    spawnSlime() {
         //this.slime.x = Phaser.Math.Between(100, 600);
-        this.slime = this.physics.add.sprite( Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime');
-    }
-    
+       // this.slime = this.physics.add.sprite(Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime');
+       var sprite = this.physics.add.sprite(Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime').setInteractive();
+
+        sprite.on('pointerdown', function (pointer) {
+
+            sprite.destroy();
+
+        });
+    } 
+
     update() {
-        
-        this.tempo ++;
+
+        this.tempo++;
         //console.log(tempo);
-        if(this.tempo >100)
-        {
-            this.tempo=0;
+        if (this.tempo > 100) {
+            this.tempo = 0;
             this.spawnSlime();
         }
     }
