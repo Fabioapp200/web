@@ -2,8 +2,6 @@ class SceneMain extends Phaser.Scene {
     constructor() {
         super('SceneMain');
     }
-
-
     preload() {
         // carregando assets
         this.load.image('slime', 'images/slime.png');
@@ -15,39 +13,62 @@ class SceneMain extends Phaser.Scene {
         // adicionando assets na cena
         this.background = this.add.image(250,250, 'background');
         this.Pedestal = this.add.sprite(game.config.width * 0.5, game.config.height * 0.2, 'Pedestal');
-        this.Medalhao = this.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'Medalhao');
+        this.Medalhao = this.physics.add.sprite(game.config.width * 0.5, game.config.height * 0.1, 'Medalhao');
+        
       
         //add score
         this.score = 0;
+        console.log(this.score);
         let style = { font: '20px Arial', fill: '#fff' };
+        let style2 = { font: '50px Arial', fill: '#fff' };
         this.scoreText = this.add.text(20, 20, 'score: ' + this.score, style);
+        console.log(this.score);
+        //add text alert
+        this.alertTxt = this.add.text(game.config.width * 0.25, game.config.height * 0.5, '',style2);
         
         this.tempo = 0;
+    }
 
-        var score;
-        var textScore;
+    youLose()
+    {
+        this.alertTxt.setText('You Lose!!');
     }
     
     spawnSlime() 
     {
-       var sprite = this.physics.add.sprite(Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime').setInteractive();
-
+        var sprite = this.physics.add.sprite(Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime').setInteractive();
+        sprite.setGravityY(-30);
+        
         sprite.on('pointerdown', function (pointer) 
         {
             sprite.destroy();
-            score ++;
-        });
+            this.score +=10;
+            console.log(this.score);
+            
+        },this);
+        this.scoreText.setText('score: ' + this.score);
         
-    }
+    } 
 
     update() 
     {
         this.tempo++;
         //console.log(tempo);
-        if (this.tempo > 100) {
+        if (this.tempo > 100) 
+        {
             this.tempo = 0;
             this.spawnSlime();
         }
+       /*if (this.slime.inCamera) {
+            this.youLose();
+        }
+        */
+     
+        this.physics.world.collide(this.Medalhao, this.slime, function () {
+            this.youLose();
+            console.log('colidiu');
+        }, null, this);
+        
         
     }
 }

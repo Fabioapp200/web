@@ -9,9 +9,9 @@ window.onload = function () {
             default: 'arcade',
             arcade:{
                 gravity: {
-                    y:-30
+                    
                 },
-                debug: false
+                debug: true
             }
         },
         scene: [SceneMain]
