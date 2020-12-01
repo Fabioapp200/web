@@ -11,7 +11,7 @@ window.onload = function () {
                 gravity: {
                     
                 },
-                debug: true
+                debug: false
             }
         },
         scene: [SceneMain]

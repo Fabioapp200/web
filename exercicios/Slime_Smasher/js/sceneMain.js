@@ -1,15 +1,18 @@
 class SceneMain extends Phaser.Scene {
-    constructor() {
+    constructor() 
+    {
         super('SceneMain');
     }
-    preload() {
+    preload() 
+    {
         // carregando assets
         this.load.image('slime', 'images/slime.png');
         this.load.image('Pedestal', 'images/Pedestal.png');
         this.load.image('Medalhao', 'images/Medalhao.png');
         this.load.image('background', 'images/background.png');
     }
-    create() {
+    create() 
+    {
         // adicionando assets na cena
         this.background = this.add.image(250,250, 'background');
         this.Pedestal = this.add.sprite(game.config.width * 0.5, game.config.height * 0.2, 'Pedestal');
@@ -18,11 +21,11 @@ class SceneMain extends Phaser.Scene {
       
         //add score
         this.score = 0;
-        console.log(this.score);
+        
         let style = { font: '20px Arial', fill: '#fff' };
         let style2 = { font: '50px Arial', fill: '#fff' };
         this.scoreText = this.add.text(20, 20, 'score: ' + this.score, style);
-        console.log(this.score);
+       
         //add text alert
         this.alertTxt = this.add.text(game.config.width * 0.25, game.config.height * 0.5, '',style2);
         
@@ -37,38 +40,32 @@ class SceneMain extends Phaser.Scene {
     spawnSlime() 
     {
         var sprite = this.physics.add.sprite(Phaser.Math.Between(game.config.width * 0.1, game.config.width * 0.9), game.config.height * 1.5, 'slime').setInteractive();
-        sprite.setGravityY(-30);
+        //sprite.setGravityY(-30);
+        sprite.body.velocity.y = -150;
         
         sprite.on('pointerdown', function (pointer) 
         {
             sprite.destroy();
             this.score +=10;
-            console.log(this.score);
+           
             
         },this);
+
         this.scoreText.setText('score: ' + this.score);
+       
+
         
     } 
-
+    
     update() 
     {
         this.tempo++;
-        //console.log(tempo);
+
         if (this.tempo > 100) 
         {
             this.tempo = 0;
             this.spawnSlime();
         }
-       /*if (this.slime.inCamera) {
-            this.youLose();
-        }
-        */
-     
-        this.physics.world.collide(this.Medalhao, this.slime, function () {
-            this.youLose();
-            console.log('colidiu');
-        }, null, this);
-        
-        
+
     }
 }
